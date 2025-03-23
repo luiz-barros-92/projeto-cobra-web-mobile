@@ -39,3 +39,9 @@ h1 {
 #score {
     color: #850000;
     font-weight: bold; }
+
+button {
+    background-color: #fcfcfc;
+    height: 50px;
+    width: 50px;
+    border-radius: 12px; }
