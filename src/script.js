@@ -51,6 +51,31 @@ function foodEat() {
   return false;
 }
 
+const btnUp = document.getElementById('bUp');
+btnUp.addEventListener('click', () => {
+  const click = new KeyboardEvent('keydown', { key: 'ArrowUp' });
+  document.dispatchEvent(click);
+});
+
+const btnLeft = document.getElementById('bLeft');
+btnLeft.addEventListener('click', () => {
+  const click = new KeyboardEvent('keydown', { key: 'ArrowLeft' });
+  document.dispatchEvent(click);
+});
+
+const btnRight = document.getElementById('bRight');
+btnRight.addEventListener('click', () => {
+  const click = new KeyboardEvent('keydown', { key: 'ArrowRight' });
+  document.dispatchEvent(click);
+});
+
+const btnDown = document.getElementById('bDown');
+btnDown.addEventListener('click', () => {
+  const click = new KeyboardEvent('keydown', { key: 'ArrowDown' });
+  document.dispatchEvent(click);
+});
+
+
 document.addEventListener("keydown", (e) => {
   switch (e.key) {
     case "ArrowUp":
